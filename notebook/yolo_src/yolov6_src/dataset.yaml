@@ -1,0 +1,10 @@
+# Please insure that your custom_dataset are put in same parent dir with YOLOv6_DIR
+train: /content/Yolo Formatted Data (with test)/images/train # train images
+val: /content/Yolo Formatted Data (with test)/images/val # val images
+test: /content/Yolo Formatted Data (with test)/images/test # test images (optional)
+
+# whether it is coco dataset, only coco dataset should be set to True.
+is_coco: False
+# Classes
+nc: 9  # number of classes
+names: ['boneanomaly','bonelesion','foreignbody','fracture','metal','periostealreaction','pronatorsign','softtissue','text']  # class names

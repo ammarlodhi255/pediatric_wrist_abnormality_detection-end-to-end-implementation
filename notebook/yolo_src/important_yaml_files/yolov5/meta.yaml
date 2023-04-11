@@ -1,0 +1,15 @@
+names:
+- boneanomaly
+- bonelesion
+- foreignbody
+- fracture
+- metal
+- periostealreaction
+- pronatorsign
+- softtissue
+- text
+nc: 9
+path: ../Dataset/folder_structure/yolov5/images
+train: ../Dataset/folder_structure/yolov5/images/train
+val: ../Dataset/folder_structure/yolov5/images/valid
+test: ../Dataset/folder_structure/yolov5/images/test

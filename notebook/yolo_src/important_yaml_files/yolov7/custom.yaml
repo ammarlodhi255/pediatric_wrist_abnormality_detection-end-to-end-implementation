@@ -1,0 +1,9 @@
+
+train: 
+val: 
+test: 
+# number of classes
+nc: 9
+
+# class names
+names: ['boneanomaly', 'bonelesion', 'foreignbody', 'fracture', 'metal', 'periostealreaction', 'pronatorsign', 'softtissue', 'text' ]
