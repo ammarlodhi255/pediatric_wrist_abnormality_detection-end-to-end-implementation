@@ -1,0 +1,4 @@
+YOLOv8x-best.pt
+input-image.png
+Website/static/*
+Website/__pycache__/
