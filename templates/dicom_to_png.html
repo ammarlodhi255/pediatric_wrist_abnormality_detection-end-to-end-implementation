@@ -128,7 +128,7 @@
           </div>
 
           <form
-            action="#"
+            action="/start_converting"
             method="post"
             enctype="multipart/form-data"
             class="php-email-form"
@@ -140,18 +140,29 @@
                 name="input-image"
                 type="file"
                 id="image-input"
-                accept=".dcm"
+                accept=".dicom"
                 required
               />
-              <p class="note">Note: only .dcm acceptable</p>
+              <p class="note">Note: only .dicom acceptable</p>
             </div>
             <br />
-            <div class="loaderOfImage"></div>
             <div class="text-center">
               <button type="submit">Convert</button>
             </div>
           </form>
-          <div class="preview"></div>
+          <div class="preview d-flex justify-content-center">
+            <a
+              class="d-flex justify-content-center"
+              download="converted-image.png"
+              href="{{file_path}}"
+              title="ImageName"
+            >
+              <img class="img-thumbnail mt-5" src="{{file_path}}" width="30%" />
+            </a>
+          </div>
+          <p class="d-flex justify-content-center">
+            <i>Click image to download</i>
+          </p>
         </div>
       </section>
     </main>

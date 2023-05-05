@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 from extract_bbox_info import yolo_to_dict
 from ultralytics import YOLO
 from PIL import Image
+import numpy as np
 import datetime
 import pydicom
 import shutil
@@ -20,6 +21,17 @@ def documentation():
 @app.route("/conversion_tool")
 def conversion_tool():        
     return render_template('dicom_to_png.html')
+
+@app.route("/start_converting", methods=['GET', 'POST'])
+def start_converting():        
+    if request.method == 'POST':
+        print('yes')
+        remove_files()
+        file = request.files.get('input-image')
+        if file:
+            file.save('static/convert-file.dicom')
+            dicom_to_png('static/convert-file.dicom', 'static/convert-file.png')
+    return render_template('dicom_to_png.html', file_path='static/convert-file.png')
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
@@ -66,12 +78,18 @@ def remove_files():
         shutil.rmtree('static/runs')
     if os.path.exists('static/input-image.png'):
         os.remove('static/input-image.png')
+    if os.path.exists('static/convert-file.dicom'):
+        os.remove('static/convert-file.dicom')
+    if os.path.exists('static/convert-file.png'):
+        os.remove('static/convert-file.png')
 
 def dicom_to_png(input_file, output_file):
-    # dicom_data = pydicom.dcmread(input_file)
-    # img = Image.fromarray(dicom_data.pixel_array)
-    # img.save(output_file)
-    pass
+    im = pydicom.dcmread(input_file)
+    im = im.pixel_array.astype(float)
+    rescaled_image = (np.maximum(im, 0)/im.max()) * 255
+    final_image = np.uint8(rescaled_image)
+    final_image = Image.fromarray(final_image)
+    final_image.save(output_file)
 
 if __name__ == "__main__":
     app.run(debug=True) 
