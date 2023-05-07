@@ -1,6 +1,4 @@
-# Pediatric Wrist Abnormality Detection Syste
-
-An application that detect anomalies in the X-Ray image with accuracy.
+# Pediatric Wrist Abnormality Detection System
 
 <div align="center">
   <img width="512" src="static/assets/gif/interface.gif">
