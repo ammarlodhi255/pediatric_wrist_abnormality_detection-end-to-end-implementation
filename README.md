@@ -76,7 +76,7 @@ First and foremost, we would like to thank our project supervisor, Dr. Sher Muha
 
 We also extend our thanks to Mam Faryal Shamsi, Saif Hassan, and Babar Shah, the members of our internal committee, for their valuable input and feedback during the project's development.
 
-We would also like to thank our research supervisors, Dr. Sher Muhammad Daudpota (Sukkur IBA, Pakistan), Ali Shariq (NTNU Norway), and Zenun Kastrati (LNU Sweden), for their support and encouragement throughout our research and development process.
+We would also like to thank our research supervisors, Dr. Sher Muhammad Daudpota (Sukkur IBA, Pakistan), Ali Shariq (NTNU Norway), and Zenun Kastrati (Linnaeus University, Sweden), for their support and encouragement throughout our research and development process.
 
 Finally, we would like to acknowledge our fellow team member, Abdul Manaf, for his contributions and collaboration throughout the project.
 
