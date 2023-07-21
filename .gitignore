@@ -4,9 +4,6 @@ static/*
 # Keep the "static/assets" directory and its contents
 !static/assets/
 
-# Ignore any other file or directory inside the "static" directory
-static/*/*
-
 # Ignore the "__pycache__" directory and its contents (if present)
 __pycache__/
 
