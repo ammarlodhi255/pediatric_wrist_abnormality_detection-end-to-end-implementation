@@ -85,13 +85,19 @@
           <ul>
             <li><a class="nav-link scrollto" href="/">Home</a></li>
 
-            <li><a class="nav-link scrollto" href="/#Research-Paper">Research</a></li>
+            <li>
+              <a class="nav-link scrollto" href="/#Research-Paper">Research</a>
+            </li>
             <li>
               <a class="nav-link scrollto" href="#documentation"
                 >Documentation</a
               >
             </li>
-            <li><a class="nav-link scrollto" href="#conversion_tool">Conversion Tool</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#conversion_tool"
+                >Conversion Tool</a
+              >
+            </li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
@@ -122,7 +128,7 @@
           <div id="slideshow-items-container">
             <img
               class="slideshow-items active predicted-image"
-              src="{{url_for('static', filename='runs/detect/predict/input-image.png')}}"
+              src="{{ url_for('static', filename='runs/detect/predict/input-image.png') }}?{{ timestamp }}"
               alt="error - image is not loading"
             />
           </div>
@@ -445,16 +451,21 @@
     <script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
     <script src="{{ url_for('static', filename='assets/js/result.js')}}"></script>
     <script>
-      const toggleBtn = document.getElementById("image-type");
-      const myImg = document.getElementsByClassName("predicted-image")[0];
-      toggleBtn.addEventListener("click", function () {
-        console.log("yes");
-        if (myImg.src.includes("runs/detect/predict/input-image.png")) {
-          myImg.src = "{{url_for('static', filename='input-image.png')}}";
-        } else {
-          myImg.src =
-            "{{url_for('static', filename='runs/detect/predict/input-image.png')}}";
-        }
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("image-type");
+        const myImg = document.getElementsByClassName("predicted-image")[0];
+        const defaultImageUrl =
+          "{{url_for('static', filename='runs/detect/predict/input-image.png')}}?{{ timestamp }}";
+        const originalImageUrl =
+          "{{url_for('static', filename='input-image.png')}}?{{ timestamp }}";
+
+        toggleBtn.addEventListener("change", function () {
+          if (toggleBtn.checked) {
+            myImg.src = defaultImageUrl;
+          } else {
+            myImg.src = originalImageUrl;
+          }
+        });
       });
     </script>
   </body>

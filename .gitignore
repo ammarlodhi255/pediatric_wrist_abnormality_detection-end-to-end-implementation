@@ -1,6 +1,6 @@
 YOLOv8x-best.pt
 input-image.png
-Website/static/*
-Website/__pycache__/
+static/*
+__pycache__/
 convert-file.png
 convert-file.dicom
