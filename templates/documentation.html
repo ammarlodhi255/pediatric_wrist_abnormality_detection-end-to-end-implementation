@@ -90,12 +90,12 @@
               >
             </li>
             <li>
-              <a class="nav-link scrollto" href="#conversion_tool"
+              <a class="nav-link scrollto" href="/conversion_tool"
                 >Conversion Tool</a
               >
             </li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li><a class="nav-link scrollto" href="/#about">About</a></li>
+            <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -109,107 +109,177 @@
     <!-- End Header -->
 
     <main id="main">
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br />
+
+      <!-- ======= Documentation Section ======= -->
+      <section id="documentation" class="bg-light">
+        <div class="container">
+          <div class="section-title">
+            <h2>Documentation</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- Add content here -->
+              <h3>Methodology</h3>
+              <p>
+                Our project utilized a combination of machine learning and deep
+                learning techniques to develop an efficient wrist anomaly
+                detection system for pediatric physicians and surgeons. We
+                performed a total of 23 detection procedures, which involved
+                data preprocessing, image augmentation, and experimentation with
+                different architectures.
+              </p>
+              <h3>Neural Network Models</h3>
+              <p>
+                We explored state-of-the-art YOLO (You Only Look Once) models,
+                including
+                <a href="https://github.com/ultralytics/yolov5">YOLOv5</a>,
+                <a href="https://github.com/meituan/YOLOv6">YOLOv6</a>,
+                <a href="https://github.com/WongKinYiu/yolov7">YOLOv7</a>, and
+                <a href="https://github.com/ultralytics/ultralytics">YOLOv8</a>
+                for wrist anomaly detection. Among these models, YOLOv8x was
+                identified as the best-performing variant, especially for
+                detecting small abnormalities in pediatric X-ray images.
+              </p>
+              <p>
+                To utilize YOLO models efficiently, we integrated the
+                Ultralytics PyTorch library (<a
+                  href="https://github.com/pytorch/pytorch"
+                  >GitHub Repository</a
+                >) into our project. This library simplified model
+                implementation, training, and evaluation, allowing us to focus
+                on enhancing detection accuracy and optimizing the system's
+                performance.
+              </p>
+              <h3>Faster R-CNN for Comparison</h3>
+              <p>
+                In addition to YOLO models, we also experimented with Faster
+                R-CNN (Region-Based Convolutional Neural Network), a two-stage
+                object detection model. While YOLO excels in real-time
+                detection, Faster R-CNN provides a strong baseline for
+                comparison in our research.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <!-- Add content here -->
+              <h3>Flask Web Interface</h3>
+              <p>
+                To facilitate easy access to the wrist anomaly detection system,
+                we developed a user-friendly web-based interface using Flask.
+                The interface allows medical professionals to upload pediatric
+                X-ray images, and the AI system processes the images and
+                highlights any detected wrist anomalies with bounding boxes.
+              </p>
+              <p>
+                Additionally, we implemented several functions within the Flask
+                application, such as:
+              </p>
+              <ul>
+                <li>
+                  Function 1: Image Preprocessing - prepares the uploaded X-ray
+                  images for input to the YOLO model.
+                </li>
+                <li>
+                  Function 2: Anomaly Detection - performs object detection
+                  using the trained YOLOv8x model and visualizes anomalies with
+                  bounding boxes.
+                </li>
+                <li>
+                  Function 3: Anomaly Counting - counts the total number of
+                  wrist anomalies detected in the X-ray image.
+                </li>
+                <li>
+                  Function 4: Transfer Learning - fine-tunes the YOLO model for
+                  extending anomaly detection to other bones.
+                </li>
+              </ul>
+              <h3>Android Application</h3>
+              <p>
+                To ensure broader accessibility, we developed an Android
+                application that integrates the wrist anomaly detection system.
+                The Android app allows medical professionals to perform wrist
+                anomaly diagnosis using their mobile devices. It features a
+                user-friendly interface with functionalities similar to the
+                web-based version.
+              </p>
+            </div>
+          </div>
+          <!-- Insert YOLO and Faster R-CNN architecture images here -->
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>YOLO Architecture</h3>
+              <p>
+                <img
+                  src="{{ url_for('static', filename='assets/img/archi2.png') }}"
+                  alt="YOLO Architecture"
+                  style="max-width: 90%; height: auto"
+                />
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <h3>Faster R-CNN Architecture</h3>
+              <p>
+                <img
+                  src="{{ url_for('static', filename='assets/img/faster-rcnn_pipeline.png') }}"
+                  alt="Faster R-CNN Architecture"
+                  style="max-width: 90%; height: auto"
+                />
+              </p>
+            </div>
+          </div>
+
+          <!-- GitHub Repository Section -->
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="text-center">GitHub Repository</h3>
+              <div
+                class="github-repo-box d-flex justify-content-center align-items-center p-4"
+                style="
+                  width: 40%;
+                  margin: auto;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <a
+                  href="https://github.com/AbdulManaf12/Pediatric-Wrist-Abnormality-Detection-System"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100"
+                    height="100"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 0a8 8 0 0 0-2.52 15.59c.4.07.55-.17.55-.38v-1.33c-2.25.49-2.73-1.08-2.73-1.08a2.14 2.14 0 0 0-.89-1.18c-.72-.5.06-.49.06-.49a1.69 1.69 0 0 1 1.24.83a1.72 1.72 0 0 0 2.35.67a1.71 1.71 0 0 1 .5-1.07c-1.75-.2-3.59-.88-3.59-3.92a3.06 3.06 0 0 1 .82-2.13a2.86 2.86 0 0 1 .08-2.1s.67-.22 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82a2.85 2.85 0 0 1 .08 2.1a3.06 3.06 0 0 1 .82 2.13c0 3.05-1.85 3.72-3.6 3.92a1.89 1.89 0 0 1 .54 1.47v2.18c0 .21.14.46.55.38A8 8 0 0 0 8 0z"
+                    />
+                  </svg>
+                </a>
+                <p class="ms-3 mb-0">
+                  Check out our
+                  <a
+                    href="https://github.com/AbdulManaf12/Pediatric-Wrist-Abnormality-Detection-System"
+                    target="_blank"
+                    >GitHub repository</a
+                  >
+                  for the full source code and implementation details of the
+                  Pediatric Wrist Abnormality Detection System.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Documentation Section -->
     </main>
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="footer-info">
-                <h3>Pediatric Wrist Anomaly Classification & Detection</h3>
-                <p>
-                  Nisar Ahmed Siddiqui Road, <br />
-                  Sukkur, Sindh, Pakistan <br /><br />
-                  <strong>Phone:</strong> +92 300 3141736<br />
-                  <strong>Email:</strong>
-                  ammarahmed.bscsf19@iba-suk.edu.pk<br />
-                  <strong>Email:</strong> amanaf.bscsf19@iba-suk.edu.pk<br />
-                </p>
-                <div class="social-links mt-3">
-                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                  <a href="#" class="facebook"
-                    ><i class="bx bxl-facebook"></i
-                  ></a>
-                  <a href="#" class="instagram"
-                    ><i class="bx bxl-instagram"></i
-                  ></a>
-                  <a href="#" class="google-plus"
-                    ><i class="bx bxl-skype"></i
-                  ></a>
-                  <a href="#" class="linkedin"
-                    ><i class="bx bxl-linkedin"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Terms of service</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Privacy policy</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Web Development</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Product Management</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Graphic Design</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Our Newsletter</h4>
-              <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
-              </p>
-              <form action="" method="post">
-                <input type="email" name="email" /><input
-                  type="submit"
-                  value="Subscribe"
-                />
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+    <footer id="footer" class="bg-dark text-light text-center py-3">
+      <p>Copyright &copy; 2023 Sukkur IBA</p>
     </footer>
     <!-- End Footer -->
 
