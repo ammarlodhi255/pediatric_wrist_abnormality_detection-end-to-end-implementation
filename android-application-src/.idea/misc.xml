@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/FYP-1/FYP-Project/FYP-Project/Mobile-Application/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/FYP-1/FYP-Project/Mobile-Application/app/src/main/res/font/open_sans.xml" value="0.23541666666666666" />
+        <entry key="..\:/FYP-1/FYP-Project/Mobile-Application/app/src/main/res/layout-v26/activity_image_result.xml" value="0.15217391304347827" />
+        <entry key="..\:/FYP-1/FYP-Project/Mobile-Application/app/src/main/res/layout/activity_dicomtopng.xml" value="0.22" />
+        <entry key="..\:/FYP-1/FYP-Project/Mobile-Application/app/src/main/res/layout/activity_image_detection.xml" value="0.22" />
+        <entry key="..\:/FYP-1/FYP-Project/Mobile-Application/app/src/main/res/layout/activity_image_result.xml" value="0.1" />
+        <entry key="..\:/FYP-1/FYP-Project/Mobile-Application/app/src/main/res/layout/activity_main.xml" value="0.20673076923076922" />
+        <entry key="..\:/FYP-1/FYP-Project/Mobile-Application/app/src/main/res/layout/activity_menu_page.xml" value="0.16930312099187686" />
+        <entry key="..\:/FYP-1/FYP-Project/Mobile-Application/app/src/main/res/layout/activity_real_time_detection.xml" value="0.17255434782608695" />
+        <entry key="..\:/FYP-1/FYP-Project/Mobile-Application/app/src/main/res/layout/image_result.xml" value="0.1" />
+        <entry key="..\:/FYP-1/FYP-Project/android-application-src/app/src/main/res/layout/activity_image_detection.xml" value="0.22" />
+        <entry key="..\:/FYP-1/FYP-Project/android-application-src/app/src/main/res/layout/image_result.xml" value="0.20625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

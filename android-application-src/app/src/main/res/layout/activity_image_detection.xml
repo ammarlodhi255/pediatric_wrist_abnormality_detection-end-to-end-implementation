@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageDetection"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="MissingClass">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="X-RAY IMAGE DETECTION"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/my_gray"
+        android:background="@color/my_blue"
+        android:fontFamily="@font/open_sans_bold"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>
