@@ -1,0 +1,12 @@
+# Citation File Format 1.2.0
+
+title: "Enhancing wrist abnormality detection with YOLO: Analysis of state-of-the-art single-stage detection models"
+authors:
+  - name: "Ahmed, A."
+  - name: "Imran, A. S."
+  - name: "Manaf, A."
+  - name: "Kastrati, Z."
+  - name: "Daudpota, S. M."
+license: "CC-BY-4.0"
+version: "1.0"
+date-released: "2024-07-01"
