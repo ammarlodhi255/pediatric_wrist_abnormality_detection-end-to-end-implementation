@@ -1,5 +1,7 @@
 # Pediatric Wrist Abnormality Detection System
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/enhancing-wrist-abnormality-detection-with/object-detection-on-grazpedwri-dx)](https://paperswithcode.com/sota/object-detection-on-grazpedwri-dx?p=enhancing-wrist-abnormality-detection-with)
+
 <div align="center">
   <img width="512" src="static/assets/gif/interface.gif">
 </div>
