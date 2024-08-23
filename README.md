@@ -3,7 +3,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/enhancing-wrist-abnormality-detection-with/object-detection-on-grazpedwri-dx)](https://paperswithcode.com/sota/object-detection-on-grazpedwri-dx?p=enhancing-wrist-abnormality-detection-with)
 
 <div align="center">
-  <img width="512" src="static/assets/architecture.png">
+  <img width="512" src="static/assets/img/architecture.png">
 </div>
 
 Journal Paper URL: [Enhancing wrist abnormality detection with YOLO: Analysis of state-of-the-art single-stage detection models](https://www.sciencedirect.com/science/article/pii/S1746809424002027)
